@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+
+
+namespace sugdemo.models
+{
+
+
+ 	/// <summary>
+	/// IReading Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/SUGDemo/PageTypes/Reading</para>	
+	/// <para>ID: 324a4376-224e-4f17-b116-773b9b783e30</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=Reading.TemplateIdString, AutoMap=true)]
+	public partial interface IReading : IGlassBase , global::sugdemo.models.IPage, global::sugdemo.models.INavigable
+	{
+	}
+
+	
+	/// <summary>
+	/// Reading
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/SUGDemo/PageTypes/Reading</para>	
+	/// <para>ID: 324a4376-224e-4f17-b116-773b9b783e30</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=Reading.TemplateIdString, AutoMap=true)]
+	public partial class Reading  : GlassBase, IReading 
+	{
+	    
+		public const string TemplateIdString = "324a4376-224e-4f17-b116-773b9b783e30";
+		public static readonly ID TemplateId = new ID(TemplateIdString);
+		public const string TemplateName = "Reading";
+
+		/// <summary>
+		/// The PageTitle field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 90018ea2-156a-4919-a5b7-326f5abe7a57</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(Reading.PageTitleFieldName)]
+		public virtual string PageTitle  {get; set;}
+
+		public static readonly ID PageTitleFieldId = new ID("90018ea2-156a-4919-a5b7-326f5abe7a57");
+		public const string PageTitleFieldName = "PageTitle";
+			
+		/// <summary>
+		/// The NavigationTitle field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 5c5dee1e-2dd2-4c65-9b6f-af55cbc5f346</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(Reading.NavigationTitleFieldName)]
+		public virtual string NavigationTitle  {get; set;}
+
+		public static readonly ID NavigationTitleFieldId = new ID("5c5dee1e-2dd2-4c65-9b6f-af55cbc5f346");
+		public const string NavigationTitleFieldName = "NavigationTitle";
+			
+		/// <summary>
+		/// The ShowInMenu field.
+		/// <para></para>
+		/// <para>Field Type: Checkbox</para>		
+		/// <para>Field ID: 3328f79c-b57b-438e-a3bc-b5438ddbee08</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(Reading.ShowInMenuFieldName)]
+		public virtual bool ShowInMenu  {get; set;}
+
+		public static readonly ID ShowInMenuFieldId = new ID("3328f79c-b57b-438e-a3bc-b5438ddbee08");
+		public const string ShowInMenuFieldName = "ShowInMenu";
+			
+	
+	}
+}
+

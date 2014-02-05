@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+
+
+namespace sugdemo.models
+{
+
+
+ 	/// <summary>
+	/// IReadingListFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/SUGDemo/Folders/ReadingListFolder</para>	
+	/// <para>ID: 4a4c5ce3-a949-4b55-bb9f-48c448a4d57d</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ReadingListFolder.TemplateIdString, AutoMap=true)]
+	public partial interface IReadingListFolder : IGlassBase 
+	{
+	}
+
+	
+	/// <summary>
+	/// ReadingListFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/SUGDemo/Folders/ReadingListFolder</para>	
+	/// <para>ID: 4a4c5ce3-a949-4b55-bb9f-48c448a4d57d</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ReadingListFolder.TemplateIdString, AutoMap=true)]
+	public partial class ReadingListFolder  : GlassBase, IReadingListFolder 
+	{
+	    
+		public const string TemplateIdString = "4a4c5ce3-a949-4b55-bb9f-48c448a4d57d";
+		public static readonly ID TemplateId = new ID(TemplateIdString);
+		public const string TemplateName = "ReadingListFolder";
+
+	
+	}
+}
+
