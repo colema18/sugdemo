@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace sugdemo.web.Page.Types {
+namespace sugdemo.web.Page.Elements.Wrapper {
     
     
     public partial class Header {

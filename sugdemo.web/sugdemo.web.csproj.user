@@ -16,7 +16,7 @@
           <SQLDebugging>False</SQLDebugging>
           <ExternalProgram>
           </ExternalProgram>
-          <StartExternalURL>http://local.sugdemo.com</StartExternalURL>
+          <StartExternalURL>http://local.sugdemo.com/reading-list</StartExternalURL>
           <StartCmdLineArguments>
           </StartCmdLineArguments>
           <StartWorkingDirectory>

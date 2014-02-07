@@ -42,6 +42,15 @@
     <OutputPath>.\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Dev' ">
+    <DebugSymbols>true</DebugSymbols>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <SitecoreDeployFolder>C:\sites\sugdemo.dev\Website</SitecoreDeployFolder>
+    <SitecoreWebUrl>http://dev.sugdemo.com</SitecoreWebUrl>
+    <SitecoreAccessGuid>8be2eff6-6c5d-476d-8ff1-b7cefc666954</SitecoreAccessGuid>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <OutputPath>.\Dev\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
       <Value>$(AssemblyFileVersion)</Value>
@@ -49,9 +58,6 @@
     <AssemblyAttributes Include="AssemblyVersion">
       <Value>$(AssemblyVersion)</Value>
     </AssemblyAttributes>
-  </ItemGroup>
-  <ItemGroup>
-    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <ItemGroup>
     <SitecoreItem Include="sitecore\content.item">
@@ -325,5 +331,25 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
   </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
+  <Target Name="AfterBuild">
+    <PropertyGroup>
+      <AfterBuildFile>$(SourceWebPhysicalPath)\BuildConfig\AfterBuild.proj</AfterBuildFile>
+      <TempProjectFile>Build.$([System.Guid]::NewGuid()).proj</TempProjectFile>
+    </PropertyGroup>
+    <Copy SourceFiles="$(AfterBuildFile)" DestinationFiles="$(TempProjectFile)" />
+    <ConvertToAbsolutePath Paths="$(AfterBuildFile)">
+      <Output TaskParameter="AbsolutePaths" PropertyName="AfterBuildAbsolute" />
+    </ConvertToAbsolutePath>
+    <Message Text="PerformFileReplacements - Running MSBuild on $(AfterBuildAbsolute)" />
+    <MSBuild Projects="$(TempProjectFile)" Properties="Configuration=$(Configuration);SitecoreDeployFolder=$(SitecoreDeployFolder)" Condition="Exists('$(TempProjectFile)')" />
+    <RemoveDir Directories="$(SitecoreDeployFolder)\BuildConfig" />
+    <ItemGroup>
+      <TempProjectFiles Include="Build.????????-????-????-????-????????????.proj" />
+    </ItemGroup>
+    <Delete Files="@(TempProjectFiles)" />
+  </Target>
 </Project>

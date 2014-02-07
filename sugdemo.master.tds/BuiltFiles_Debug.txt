@@ -100,6 +100,12 @@
 .\Debug\Content\bootstrap\badges.less
 .\Debug\Content\bootstrap\alerts.less
 .\Debug\Content\css\style.less
+.\Debug\BuildConfig\AfterBuild.proj
+.\Debug\BuildConfig\ConnectionStrings.Subs.Debug.config
+.\Debug\BuildConfig\Web.Subs.Common.config
+.\Debug\BuildConfig\Web.Subs.Debug.config
+.\Debug\Page\Types\Reading.ascx
+.\Debug\Page\Types\ReadingListing.ascx
 .\Debug\Scripts\bootstrap.js
 .\Debug\Scripts\bootstrap.min.js
 .\Debug\Scripts\jquery-1.10.2.js
@@ -107,7 +113,7 @@
 .\Debug\Scripts\jquery-1.10.2.min.map
 .\Debug\App_Config\Include\Sitecore.Analytics.ldf
 .\Debug\App_Config\Include\Sitecore.Analytics.mdf
-.\Debug\Page\Elements\Header.ascx
+.\Debug\Page\Elements\Wrapper\Header.ascx
 .\Debug\Page\Layouts\StandardLayout.aspx
 .\Debug\Scripts\less-1.5.1.js
 .\Debug\Scripts\less-1.5.1.min.js
