@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {324A4376-224E-4F17-B116-773B9B783E30}
+database: master
+path: /sitecore/templates/SUGDemo/PageTypes/Reading
+parent: {9D96652C-3327-427A-BA47-260F708C759F}
+name: Reading
+master: {00000000-0000-0000-0000-000000000000}
+template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
+templatekey: Template
+
+----field----
+field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
+name: __Base template
+key: __base template
+content-length: 116
+
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{DC5969E5-D293-4EA4-91DE-C0A6CDB17FB4}|{BF41068C-4E3E-4AD4-8EFD-EF9585A3A38F}
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 38
+
+{CD436F35-A5BC-45FA-A29A-90FB8898E6E6}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 39
+
+Applications/32x32/bullet_ball_blue.png
+----version----
+language: en
+version: 1
+revision: 302b8c60-a817-42f9-8b61-04ad19949ca0
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140130T202654
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+302b8c60-a817-42f9-8b61-04ad19949ca0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140205T101633:635271921933624246
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
