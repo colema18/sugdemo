@@ -5,3 +5,5 @@ packages
 Debug
 IconCache
 /sugdemo.master.tds/BuiltFiles_Debug.txt
+/sugdemo.master.tds/BuiltFiles_Dev.txt
+Dev

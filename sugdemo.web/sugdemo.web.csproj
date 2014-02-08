@@ -315,8 +315,9 @@
     <Content Include="BuildConfig\ConnectionStrings.Subs.Dev.config">
       <SubType>Designer</SubType>
     </Content>
-    <None Include="BuildConfig\Web.Subs.Debug - Copy %282%29.config" />
-    <None Include="BuildConfig\Web.Subs.Dev.config" />
+    <Content Include="BuildConfig\Web.Subs.Dev.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Page\Types\Reading.ascx" />
     <Content Include="Page\Types\ReadingListing.ascx" />
