@@ -335,7 +335,7 @@
     <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
-  <Target Name="AfterBuild">
+  <Target Name="BeforeBuild">
     <PropertyGroup>
       <AfterBuildFile>$(SourceWebPhysicalPath)\BuildConfig\AfterBuild.proj</AfterBuildFile>
       <TempProjectFile>Build.$([System.Guid]::NewGuid()).proj</TempProjectFile>
