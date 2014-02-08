@@ -319,6 +319,10 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Page\Elements\Reading\Detail.ascx" />
+    <Content Include="Page\Elements\Reading\Listing.ascx" />
+    <Content Include="Page\Elements\Wrapper\ReadingHeader.ascx" />
+    <Content Include="Page\HtmlPage1.html" />
     <Content Include="Page\Types\Reading.ascx" />
     <Content Include="Page\Types\ReadingListing.ascx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -345,6 +349,27 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Page\Elements\Reading\Detail.ascx.cs">
+      <DependentUpon>Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Elements\Reading\Detail.ascx.designer.cs">
+      <DependentUpon>Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Elements\Reading\Listing.ascx.cs">
+      <DependentUpon>Listing.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Elements\Reading\Listing.ascx.designer.cs">
+      <DependentUpon>Listing.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Elements\Wrapper\ReadingHeader.ascx.cs">
+      <DependentUpon>ReadingHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Elements\Wrapper\ReadingHeader.ascx.designer.cs">
+      <DependentUpon>ReadingHeader.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Page\Elements\Wrapper\Header.ascx.cs">
       <DependentUpon>Header.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
