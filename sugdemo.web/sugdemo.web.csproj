@@ -367,6 +367,7 @@
   <ItemGroup>
     <Compile Include="App_Start\GlassMapperSc.cs" />
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
+    <Compile Include="Extensions\GlassExtensions.cs" />
     <Compile Include="Page\Elements\Reading\Detail.ascx.cs">
       <DependentUpon>Detail.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
