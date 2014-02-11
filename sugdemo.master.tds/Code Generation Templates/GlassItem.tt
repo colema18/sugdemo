@@ -5,8 +5,8 @@
 
 <#@ assembly name="System.Core.dll" #>
 
-<#@ assembly name="C:\projects\sugdemo\sugdemo.references\HedgehogDevelopment.CodeGeneration.Extensions.dll" #>
 <#@ import namespace="HedgehogDevelopment.CodeGeneration.Extensions" #>
+<#@ assembly name="C:\projects\sugdemo\sugdemo.references\HedgehogDevelopment.CodeGeneration.Extensions.dll" #>
 
 <#@ import namespace="System" #>
 <#@ import namespace="System.Text" #>
@@ -35,7 +35,7 @@ type=[type]
 	Sets the return type of the generated property
 generic=[type]
 	In the event the type (either specificed or auto mapped) is a generic it will use this generic type. i.e. List<generic>
-		
+
 */
 #>
 
@@ -61,21 +61,37 @@ namespace <#= GetNamespace(DefaultNamespace, template)#>
 	/// <para>Path: <#= template.Path #></para>	
 	/// <para>ID: <#= template.ID.ToString() #></para>	
 	/// </summary>
-	[SitecoreType(TemplateId=<#= template.Name.AsClassName() #>.TemplateIdString, AutoMap=true)]
+	[SitecoreType(TemplateId=<#= template.Name.AsInterfaceName() #>Constants.TemplateIdString)]
 	public partial interface <#= template.Name.AsInterfaceName() #> : IGlassBase <#=GetObjectInheritanceDefinition(DefaultNamespace, template, true, (string s) => s.AsInterfaceName())#>
 	{
-<#foreach(SitecoreField field in GetFieldsForTemplate(template, false)){#>
-		/// <summary>
-		/// The <#=field.Name#> field.
-		/// <para><#= field.SitecoreFields.GetValue("__Short description")#></para>
-		/// <para>Field Type: <#=field.Type#></para>		
-		/// <para>Field ID: <#=field.ID.ToString()#></para>
-		/// <para>Custom Data: <#=field.Data#></para>
-		/// </summary>
-		[SitecoreField(<#= template.Name.AsClassName() #>.<#= GetPropertyName(field) #>FieldName)]
-		<#=GetGlassFieldType(field)#> <#= GetPropertyName(field) #>  {get; set;}
-			
-<#}#>
+			<#foreach(SitecoreField field in GetFieldsForTemplate(template, false)){#>
+					/// <summary>
+					/// The <#=field.Name#> field.
+					/// <para><#= field.SitecoreFields.GetValue("__Short description")#></para>
+					/// <para>Field Type: <#=field.Type#></para>		
+					/// <para>Field ID: <#=field.ID.ToString()#></para>
+					/// <para>Custom Data: <#=field.Data#></para>
+					/// </summary>
+					[SitecoreField(<#= template.Name.AsInterfaceName() #>Constants.<#= GetPropertyName(field) #>FieldName)]
+					<#=GetGlassFieldType(field)#> <#= GetPropertyName(field) #>  {get; set;}
+
+			<#}#>
+	}
+
+
+	public static partial class <#= template.Name.AsInterfaceName() #>Constants{
+
+			public const string TemplateIdString = "<#= template.ID.ToString() #>";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "<#= template.Name #>";
+
+		<#foreach(SitecoreField field in GetFieldsForTemplate(template, true)){#>
+
+			public static readonly ID <#= GetPropertyName(field) #>FieldId = new ID("<#=field.ID.ToString()#>");
+			public const string <#= GetPropertyName(field) #>FieldName = "<#=field.Name#>";
+
+		<#}#>	
+
 	}
 
 <#
@@ -87,30 +103,23 @@ if (!template.Name.IsInterfaceWord()){ #>
 	/// <para>Path: <#= template.Path #></para>	
 	/// <para>ID: <#= template.ID.ToString() #></para>	
 	/// </summary>
-	[SitecoreType(TemplateId=<#= template.Name.AsClassName() #>.TemplateIdString, AutoMap=true)]
+	[SitecoreType(TemplateId=<#= template.Name.AsInterfaceName() #>Constants.TemplateIdString)]
 	public partial class <#= template.Name.AsClassName() #>  : GlassBase, <#=template.Name.AsInterfaceName()#> 
 	{
-	    
-		public const string TemplateIdString = "<#= template.ID.ToString() #>";
-		public static readonly ID TemplateId = new ID(TemplateIdString);
-		public const string TemplateName = "<#= template.Name #>";
 
-<#foreach(SitecoreField field in GetFieldsForTemplate(template, true)){#>
-		/// <summary>
-		/// The <#=field.Name#> field.
-		/// <para><#= field.SitecoreFields.GetValue("__Short description")#></para>
-		/// <para>Field Type: <#=field.Type#></para>		
-		/// <para>Field ID: <#=field.ID.ToString()#></para>
-		/// <para>Custom Data: <#=field.Data#></para>
-		/// </summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
-		[SitecoreField(<#= template.Name.AsClassName() #>.<#= GetPropertyName(field) #>FieldName)]
-		public virtual <#=GetGlassFieldType(field)#> <#= GetPropertyName(field) #>  {get; set;}
+		<#foreach(SitecoreField field in GetFieldsForTemplate(template, true)){#>
+				/// <summary>
+				/// The <#=field.Name#> field.
+				/// <para><#= field.SitecoreFields.GetValue("__Short description")#></para>
+				/// <para>Field Type: <#=field.Type#></para>		
+				/// <para>Field ID: <#=field.ID.ToString()#></para>
+				/// <para>Custom Data: <#=field.Data#></para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
+				[SitecoreField(<#= template.Name.AsInterfaceName() #>Constants.<#= GetPropertyName(field) #>FieldName)]
+				public virtual <#=GetGlassFieldType(field)#> <#= GetPropertyName(field) #>  {get; set;}
 
-		public static readonly ID <#= GetPropertyName(field) #>FieldId = new ID("<#=field.ID.ToString()#>");
-		public const string <#= GetPropertyName(field) #>FieldName = "<#=field.Name#>";
-			
-<#}#>	
+		<#}#>	
 	}
 <#}#>
 }
@@ -143,7 +152,7 @@ public static string GetGlassFieldType(SitecoreField field)
 		// Pull out any 'type' param from the custom data field on the field in TDS
 		string customType = GetCustomProperty(field.Data, "type");
 		string generic = GetCustomProperty(field.Data, "generic");
-		
+
 		if (customType != "")
 		{
 			if (generic != "")
@@ -199,7 +208,7 @@ public static string GetGlassFieldType(SitecoreField field)
 			case "general link":
 			case "general link with search":
 				return "Link";
-			
+
 			case "password":
 			case "icon":
 			case "rich text":

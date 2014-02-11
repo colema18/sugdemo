@@ -1,5 +1,5 @@
-﻿<#@ assembly name="C:\projects\sugdemo\sugdemo.references\HedgehogDevelopment.CodeGeneration.Extensions.dll" #>
-<#@ import namespace="HedgehogDevelopment.CodeGeneration.Extensions" #>
+﻿<#@ import namespace="HedgehogDevelopment.CodeGeneration.Extensions" #>
+<#@ assembly name="C:\projects\sugdemo\sugdemo.references\HedgehogDevelopment.CodeGeneration.Extensions.dll" #>
 
 <#+	
 /// <summary>
@@ -55,19 +55,19 @@ public static string JoinNamespaces(params string[] namespaces)
 public static List<SitecoreField> GetFieldsForTemplate(SitecoreTemplate item, bool includeBases)
 {
 	List<SitecoreField> fields = new List<SitecoreField>();
-	
+
 	// Add direct fields that aren't ignored
 	fields.AddRange(item.Fields.Where(f=> GetCustomProperty(f.Data, "ignore") != "true"));
-	
+
 	if (includeBases)
 	{
 		// leverage an extenstion method to recursively select base templates, then flatten the fields down
 		IEnumerable<SitecoreField> baseFields = item.BaseTemplates.SelectRecursive(i=>i.BaseTemplates).SelectMany(t=>t.Fields);
-		
+
 		// only grab base fields who aren't ignored
 		fields.AddRange(baseFields.Where(f=> GetCustomProperty(f.Data, "ignore") != "true"));
 	}
-	
+
 	return fields;
 }
 
@@ -85,9 +85,9 @@ public static string GetPropertyName(SitecoreField field)
 	{
 		return customName;
 	}
-	
+
 	bool isFieldPlural = IsFieldPlural(field);
-	
+
 	return field.Name.AsPropertyName(isFieldPlural);
 }
 
@@ -108,7 +108,7 @@ public static bool IsFieldPlural(SitecoreField field)
 			"checklist",
 			"multilist"
 	};
-	
+
 	return multipleValueFields.Contains(field.Type.ToLower());
 }
 
@@ -122,7 +122,7 @@ public static string GetCustomProperty(string data, string key)
 {
 	if (string.IsNullOrEmpty(data))
 		return "";
-	
+
 	string[] strArray = data.Split(new char[] { '&' });
     string keyEquals = key + "=";
     int length = keyEquals.Length;
