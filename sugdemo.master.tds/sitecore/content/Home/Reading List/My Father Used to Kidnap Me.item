@@ -12,8 +12,55 @@ templatekey: Reading
 ----version----
 language: en
 version: 1
-revision: 863a73c9-a86c-4d81-9665-8d79698bcc5f
+revision: aef2aa67-9b92-4e2f-8aa2-c61334372b31
 
+----field----
+field: {90018EA2-156A-4919-A5B7-326F5ABE7A57}
+name: PageTitle
+key: pagetitle
+content-length: 27
+
+My Father Used to Kidnap Me
+----field----
+field: {FF178202-C22F-470D-B32D-737B02745C0F}
+name: Author
+key: author
+content-length: 9
+
+Brianna W
+----field----
+field: {25257609-2FD0-4D24-97B6-2A7F032FCDBE}
+name: SubTitle
+key: subtitle
+content-length: 28
+
+defining and redefining home
+----field----
+field: {F61F6E86-2EF0-4966-B954-AAEC78161B00}
+name: Category
+key: category
+content-length: 38
+
+{5E413647-11E4-4FA8-B856-65FDE32EBF76}
+----field----
+field: {16643CC5-4993-434F-82AE-85A8695025F6}
+name: Body
+key: body
+content-length: 2652
+
+I am the child of divorced parents, which means that I grew up with not one, but two homes.
+<br />
+<br />
+Let me take you through a typical Sunday night at each of these homes.
+<br />
+<br />
+Sunday nights at dad&rsquo;s started with the booming sound of his voice over the intercom. &ldquo;Kids. My Office.&rdquo; My siblings and I would scurry downstairs and gather on the floor in front of his desk. Then, the public shaming would begin. My dad had this end of the week ritual that we called &ldquo;The Box.&rdquo; He would spend all week collecting misplaced items from around the house&mdash;a toy, sweatshirt, notebook, one time our pet snake- and placing them in the box. On Sunday nights, my father would dangle a each object above his head and shout out the name of the item&rsquo;s owner. &ldquo;Purple colored pencil. Brianna. Worn sock. Trevor.&rdquo; and so on. Whoever had the smallest pile at the end of the night would be awarded with the grand prize of $1 dollar (which he always reminded us to save). When &ldquo;The Box&rdquo; ritual was over, we would wash up and prepare for bed. My dad would count backwards from ninety as we brushed our teeth to make sure we weren&rsquo;t cutting corners.
+<br />
+<br />
+On Sunday nights at mom&rsquo;s house, we ate spaghetti. A great fan of alliteration, mom liked to match the first letter of the contents of our dinner to the first letter of the day of the week. That meant Spaghetti Sunday. I still remember how hard she laughed the day she discovered that we could incorporate our choice of utensils into this pattern&mdash;that&rsquo;s right, we used spoons and spoons only for Spaghetti Sunday. I don&rsquo;t know how many of you have ever tried to eat spaghetti with a spoon before but it is very difficult and very messy but so much fun for a six-year-old. When spaghetti was over, my brother, mom, and I would put on her over-sized sunglasses and sparkly t-shirts&mdash;sometimes mom would let me wear her high heels or pink lipstick&mdash;and we would blast Elton John and dance around the house. Then, my mother and I would put on matching pajamas and curl up in her bed eating ice cream while we fell asleep to South Park reruns.
+<br />
+<br />
+One time, my brother and I were playing hopscotch outside mom&rsquo;s house when my father pulled up in his car. &ldquo;Get in,&rdquo; he said. I was six years old, but I knew it was mom&rsquo;s weekend and I wasn&rsquo;t supposed to see dad for another couple of days. Before I could get mom&rsquo;s attention, my father yanked my brother and me into the car and drove away. Mom chased us down the street screaming until her legs gave in.
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -27,14 +74,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-863a73c9-a86c-4d81-9665-8d79698bcc5f
+aef2aa67-9b92-4e2f-8aa2-c61334372b31
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140205T102516:635271927164260840
+20140210T215606:635276661660817895
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

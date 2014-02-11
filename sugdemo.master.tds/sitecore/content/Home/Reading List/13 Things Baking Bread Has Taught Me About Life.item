@@ -12,8 +12,49 @@ templatekey: Reading
 ----version----
 language: en
 version: 1
-revision: 0207320f-b2d6-4eef-a2e6-2d6bdd99fab0
+revision: 907e9d0e-f915-43f8-a61c-ee30a5c6af3f
 
+----field----
+field: {90018EA2-156A-4919-A5B7-326F5ABE7A57}
+name: PageTitle
+key: pagetitle
+content-length: 47
+
+13 Things Baking Bread Has Taught Me About Life
+----field----
+field: {FF178202-C22F-470D-B32D-737B02745C0F}
+name: Author
+key: author
+content-length: 13
+
+Jordan Baines
+----field----
+field: {25257609-2FD0-4D24-97B6-2A7F032FCDBE}
+name: SubTitle
+key: subtitle
+content-length: 35
+
+A baker’s dozen of valuable lessons
+----field----
+field: {F61F6E86-2EF0-4966-B954-AAEC78161B00}
+name: Category
+key: category
+content-length: 38
+
+{411CA717-6DFF-4CA2-9FF8-26FF317172AD}
+----field----
+field: {16643CC5-4993-434F-82AE-85A8695025F6}
+name: Body
+key: body
+content-length: 1126
+
+Back in college, I worked in a bakery as part of paying for all of the fun and education I wanted to get out of those four years. To this day, a decade later, I still make my own bread to eat, give as gifts, and share with friends and coworkers whenever I can smuggle a fresh boule out of my own apartment. The hours I've spent baking bread have provided me with a lot of time to think about, well, everything. Rather than provide you with ten years of notes, here&rsquo;s a simple account of thirteen I things I learned.
+<p><br />
+</p>
+<p><strong>1. Beauty comes from balance and patience.</strong></p>
+<p>Food truck Portland freegan paleo selvage consectetur. Fap tote bag four loko cred YOLO Odd Future fixie bitters wolf fugiat. Viral anim tote bag, Schlitz Shoreditch paleo kale chips Austin letterpress ennui iPhone mixtape food truck YOLO. High Life salvia aliquip 3 wolf moon consequat. Plaid cillum Godard, banjo next level Wes Anderson sint skateboard Neutra non asymmetrical polaroid. Whatever dreamcatcher excepteur, Bushwick sriracha quinoa messenger bag. Wes Anderson church-key deserunt nihil.<br />
+<br />
+</p>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -27,14 +68,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0207320f-b2d6-4eef-a2e6-2d6bdd99fab0
+907e9d0e-f915-43f8-a61c-ee30a5c6af3f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140205T102416:635271926569750834
+20140210T215559:635276661599581426
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {324A4376-224E-4F17-B116-773B9B783E30}
+id: {7CD793D6-3047-4D47-B5BE-C7AF3493E1B4}
 database: master
-path: /sitecore/templates/SUGDemo/PageTypes/Reading
-parent: {9D96652C-3327-427A-BA47-260F708C759F}
-name: Reading
+path: /sitecore/templates/SUGDemo/Folders/CategoryFolder
+parent: {E582C624-2087-4CDD-8739-0EFB3DD56480}
+name: CategoryFolder
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
@@ -13,27 +13,27 @@ templatekey: Template
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
 name: __Base template
 key: __base template
-content-length: 155
+content-length: 38
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{DC5969E5-D293-4EA4-91DE-C0A6CDB17FB4}|{BF41068C-4E3E-4AD4-8EFD-EF9585A3A38F}|{750ED7D8-03DA-41C6-957B-5AD6E06F6E8B}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}
 ----field----
 field: {F7D48A55-2158-4F02-9356-756654404F73}
 name: __Standard values
 key: __standard values
 content-length: 38
 
-{CD436F35-A5BC-45FA-A29A-90FB8898E6E6}
+{53736FCD-BDF7-4F84-80B7-D6A9102C1F31}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 39
+content-length: 34
 
-Applications/32x32/bullet_ball_blue.png
+Applications/16x16/folder_blue.png
 ----version----
 language: en
 version: 1
-revision: 7e1affc2-effd-4257-97aa-4e963a9ffda9
+revision: 695b1531-9a23-4e10-9166-a76178b145bb
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,7 +41,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20140130T202654
+20140130T194847
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7e1affc2-effd-4257-97aa-4e963a9ffda9
+695b1531-9a23-4e10-9166-a76178b145bb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140210T211332:635276636124054731
+20140210T203224:635276611445093609
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

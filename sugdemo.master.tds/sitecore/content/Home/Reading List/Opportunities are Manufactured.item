@@ -12,8 +12,45 @@ templatekey: Reading
 ----version----
 language: en
 version: 1
-revision: b0fa84e1-2fe7-4866-b2ad-0a671bee7e2e
+revision: d7f440a8-1b81-404e-9d13-1577acf1ea80
 
+----field----
+field: {90018EA2-156A-4919-A5B7-326F5ABE7A57}
+name: PageTitle
+key: pagetitle
+content-length: 30
+
+Opportunities are Manufactured
+----field----
+field: {FF178202-C22F-470D-B32D-737B02745C0F}
+name: Author
+key: author
+content-length: 13
+
+Jason Stirman
+----field----
+field: {25257609-2FD0-4D24-97B6-2A7F032FCDBE}
+name: SubTitle
+key: subtitle
+content-length: 50
+
+Don’t wait for opportunities to present themselves
+----field----
+field: {16643CC5-4993-434F-82AE-85A8695025F6}
+name: Body
+key: body
+content-length: 1158
+
+Biz Stone likes to say that opportunities are manufactured, and I couldn&rsquo;t agree more.
+<br />
+<br />
+I can&rsquo;t count the number of times someone has told me how lucky I am in my career. According to many, I am lucky to be working with Ev, lucky to have worked at Twitter, lucky to be working on Medium, lucky to be able to work in San Francisco, lucky to work with leading edge technology, etc.
+<br />
+<br />
+This isn&rsquo;t where I say &ldquo;It&rsquo;s not luck, it&rsquo;s all skill&rdquo;, because that&rsquo;s not true. Attributing career or personal achievements to only luck or skill is a short-sighted perspective on past successes. Luck and skill play a big part, but so does timing, people, intelligence, past experience, trends, and a multitude of other factors.
+<br />
+<br />
+This Fast Company article explains some of the science behind the concept of luck. People that consider themselves lucky are more open to new experiences, which often result in new opportunities. Also, maybe not surprising, lucky people often reflect on and learn from past experiences whereas unlucky people attribute past events to being a victim of chance.
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -27,14 +64,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b0fa84e1-2fe7-4866-b2ad-0a671bee7e2e
+d7f440a8-1b81-404e-9d13-1577acf1ea80
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140205T102552:635271927529593301
+20140210T215612:635276661723744709
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

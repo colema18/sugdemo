@@ -19,8 +19,84 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: c6383a53-af2e-4263-921c-b806d1305781
+revision: af83923d-7d1b-45c8-b6f4-64b9de537032
 
+----field----
+field: {90018EA2-156A-4919-A5B7-326F5ABE7A57}
+name: PageTitle
+key: pagetitle
+content-length: 33
+
+Dear Guy Who Just Made My Burrito
+----field----
+field: {FF178202-C22F-470D-B32D-737B02745C0F}
+name: Author
+key: author
+content-length: 11
+
+Lucky Shirt
+----field----
+field: {F61F6E86-2EF0-4966-B954-AAEC78161B00}
+name: Category
+key: category
+content-length: 38
+
+{27ACB8B9-CA02-41E7-9386-F193F2FCE20A}
+----field----
+field: {16643CC5-4993-434F-82AE-85A8695025F6}
+name: Body
+key: body
+content-length: 3744
+
+Have you ever been to earth?
+<br />
+<br />
+On earth, we use the word &ldquo;burrito&rdquo; to describe a tortilla filled with things you eat. Pretty simple stuff, and I&rsquo;m surprised you at least got that part right. My burrito was, in fact, filled with food. In this, you and I agree and are friends. But this is also where my lifelong hatred begins for you and anyone else whose brain has been repeatedly scrubbed with the same mixture of bleach and Pop Rocks as yours has. Because that should have killed you, but left you around long enough to do what you did to me today. Let me explain:
+<br />
+<br />
+You&rsquo;re an idiot.
+<br />
+<br />
+Let me further explain:
+<br />
+<br />
+Burritos are eaten from one end to the other. So that means when you assemble a burrito with motherfucking ZONES of ingredients going that direction, you create a disgusting experience for the burrito&rsquo;s end user. When you make a burrito, you should put the ingredients in layers lengthwise. That way, every bite has AT LEAST A FUCKING CHANCE of getting at least two types of ingredients, and there is little chance of becoming almost hopelessly trapped in a goddamned cilantro cavern.
+<br />
+<br />
+Have you ever eaten one of the things you make all fucking day? You should try one. They are pretty good WHEN YOU ARE NOT WILLING YOURSELF THROUGH THE FUCKING EMPIRE OF SOUR CREAM ONLY TO END UP IN LETTUCE COUNTRY.
+<br />
+<br />
+When you eat a burrito, you don&rsquo;t stand it up and bite down on it lengthwise like a fucking Rancor. Humans can&rsquo;t usually dislocate their jaws, and I&rsquo;m not a fucking pelican. But you must think that&rsquo;s how it&rsquo;s done, since that would be THE ONLY FUCKING WAY to take a bite of your crapstrosity and have it taste like a burrito.
+<br />
+<br />
+And guess what else, player? You probably can&rsquo;t guess anything, because I&rsquo;m pretty sure you&rsquo;re just a mop with a hat on it that fell over and spilled some shit into a tortilla, but just in case, here&rsquo;s what:
+<br />
+<br />
+Humans also don&rsquo;t eat burritos like fucking corn on the cob. Like a fucking typewriter from one end to the other a little at a time and then DING next line. But today I wish I had tried that. Because at least THEN I would be able to eat some rice, then beans, then be all like HEY BEANS I&rsquo;LL BE RIGHT BACK JUST GOING OVER HERE TO THE GUACAMOLE FOR A SECOND.
+<br />
+<br />
+Nope.
+<br />
+<br />
+My experience was more like HEY BEANS IT&rsquo;S JUST GOING TO BE YOU AND I FOR A MINUTE UNTIL I CAN FUCKING EXCAVATE THE RICE FROM BENEATH YOU BUT BY THEN YOU WILL BE A FADING MEMORY OH HEY I WAS WRONG I&rsquo;M IN THE FUCKING CHEESEOSPHERE NOW RICE MUST BE NEXT I HOPE IT&rsquo;S NOT ANOTHER FUCKING SALSA POCKET.
+<br />
+<br />
+You built this thing like a fucking pack of LifeSavers.
+<br />
+<br />
+And don&rsquo;t even fucking think I&rsquo;m about to open this shit up and re-engineer your nonsense 90 degrees. I ALREADY PUT A HOLE IN IT WITH MY FUCKING MOUTH. YEAH. THAT&rsquo;S HOW I DISCOVERED YOU FUCKING SUCK AT LOOKING AT THINGS. I AM NOT GOING TO DO FUCKING TORTILLA ORIGAMI TO GET THIS SHIT BACK TOGETHER, ONLY TO END UP WITH A BURRITO THAT&rsquo;S BEEN SHOT IN THE GUT AND IS BLEEDING YOUR INEPTITUDE.
+<br />
+<br />
+What&rsquo;s that? I should ask you to mix it up first next time? IS THIS JAMBA JUICE? I DON&rsquo;T WANT TO DRINK MY FUCKING BURRITO THROUGH A BENDY STRAW, AND I DON&rsquo;T WANT A PILE OF BURRITO SOUP IN A FLOUR CAN.
+<br />
+<br />
+I just want a burrito.
+<br />
+<br />
+In conclusion:
+<br />
+<br />
+You&rsquo;re the worst thing that has ever happened to the universe, you owe everyone everywhere an apology for this burritobomination, and I hope your babies look like monkeys.
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -34,14 +110,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c6383a53-af2e-4263-921c-b806d1305781
+af83923d-7d1b-45c8-b6f4-64b9de537032
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140205T102831:635271929110910358
+20140210T214457:635276654971021383
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

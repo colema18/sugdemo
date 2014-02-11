@@ -104,7 +104,7 @@ namespace sugdemo.models
 	/// <para>ID: 324a4376-224e-4f17-b116-773b9b783e30</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=Reading.TemplateIdString, AutoMap=true)]
-	public partial interface IReading : IGlassBase , global::sugdemo.models.IPage, global::sugdemo.models.INavigable
+	public partial interface IReading : IGlassBase , global::sugdemo.models.IPage, global::sugdemo.models.INavigable, global::sugdemo.models.IReadingDetail
 	{
 	}
 
@@ -138,6 +138,20 @@ namespace sugdemo.models
 		public const string PageTitleFieldName = "PageTitle";
 			
 		/// <summary>
+		/// The SubTitle field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 25257609-2fd0-4d24-97b6-2a7f032fcdbe</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(Reading.SubTitleFieldName)]
+		public virtual string SubTitle  {get; set;}
+
+		public static readonly ID SubTitleFieldId = new ID("25257609-2fd0-4d24-97b6-2a7f032fcdbe");
+		public const string SubTitleFieldName = "SubTitle";
+			
+		/// <summary>
 		/// The NavigationTitle field.
 		/// <para></para>
 		/// <para>Field Type: Single-Line Text</para>		
@@ -164,6 +178,48 @@ namespace sugdemo.models
 
 		public static readonly ID ShowInMenuFieldId = new ID("3328f79c-b57b-438e-a3bc-b5438ddbee08");
 		public const string ShowInMenuFieldName = "ShowInMenu";
+			
+		/// <summary>
+		/// The Author field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: ff178202-c22f-470d-b32d-737b02745c0f</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(Reading.AuthorFieldName)]
+		public virtual string Author  {get; set;}
+
+		public static readonly ID AuthorFieldId = new ID("ff178202-c22f-470d-b32d-737b02745c0f");
+		public const string AuthorFieldName = "Author";
+			
+		/// <summary>
+		/// The Body field.
+		/// <para></para>
+		/// <para>Field Type: Rich Text</para>		
+		/// <para>Field ID: 16643cc5-4993-434f-82ae-85a8695025f6</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(Reading.BodyFieldName)]
+		public virtual string Body  {get; set;}
+
+		public static readonly ID BodyFieldId = new ID("16643cc5-4993-434f-82ae-85a8695025f6");
+		public const string BodyFieldName = "Body";
+			
+		/// <summary>
+		/// The Category field.
+		/// <para></para>
+		/// <para>Field Type: Droplink</para>		
+		/// <para>Field ID: f61f6e86-2ef0-4966-b954-aaec78161b00</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(Reading.CategoryFieldName)]
+		public virtual Guid Category  {get; set;}
+
+		public static readonly ID CategoryFieldId = new ID("f61f6e86-2ef0-4966-b954-aaec78161b00");
+		public const string CategoryFieldName = "Category";
 			
 	
 	}
@@ -208,6 +264,166 @@ namespace sugdemo.models
 		public const string TemplateIdString = "4a4c5ce3-a949-4b55-bb9f-48c448a4d57d";
 		public static readonly ID TemplateId = new ID(TemplateIdString);
 		public const string TemplateName = "ReadingListFolder";
+
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+namespace sugdemo.models
+{
+
+
+ 	/// <summary>
+	/// IReadingDetail Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/SUGDemo/Interfaces/ReadingDetail</para>	
+	/// <para>ID: 750ed7d8-03da-41c6-957b-5ad6e06f6e8b</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ReadingDetail.TemplateIdString, AutoMap=true)]
+	public partial interface IReadingDetail : IGlassBase 
+	{
+		/// <summary>
+		/// The Author field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: ff178202-c22f-470d-b32d-737b02745c0f</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[SitecoreField(ReadingDetail.AuthorFieldName)]
+		string Author  {get; set;}
+			
+		/// <summary>
+		/// The Body field.
+		/// <para></para>
+		/// <para>Field Type: Rich Text</para>		
+		/// <para>Field ID: 16643cc5-4993-434f-82ae-85a8695025f6</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[SitecoreField(ReadingDetail.BodyFieldName)]
+		string Body  {get; set;}
+			
+		/// <summary>
+		/// The Category field.
+		/// <para></para>
+		/// <para>Field Type: Droplink</para>		
+		/// <para>Field ID: f61f6e86-2ef0-4966-b954-aaec78161b00</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[SitecoreField(ReadingDetail.CategoryFieldName)]
+		Guid Category  {get; set;}
+			
+	}
+
+	
+	/// <summary>
+	/// ReadingDetail
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/SUGDemo/Interfaces/ReadingDetail</para>	
+	/// <para>ID: 750ed7d8-03da-41c6-957b-5ad6e06f6e8b</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ReadingDetail.TemplateIdString, AutoMap=true)]
+	public partial class ReadingDetail  : GlassBase, IReadingDetail 
+	{
+	    
+		public const string TemplateIdString = "750ed7d8-03da-41c6-957b-5ad6e06f6e8b";
+		public static readonly ID TemplateId = new ID(TemplateIdString);
+		public const string TemplateName = "ReadingDetail";
+
+		/// <summary>
+		/// The Author field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: ff178202-c22f-470d-b32d-737b02745c0f</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(ReadingDetail.AuthorFieldName)]
+		public virtual string Author  {get; set;}
+
+		public static readonly ID AuthorFieldId = new ID("ff178202-c22f-470d-b32d-737b02745c0f");
+		public const string AuthorFieldName = "Author";
+			
+		/// <summary>
+		/// The Body field.
+		/// <para></para>
+		/// <para>Field Type: Rich Text</para>		
+		/// <para>Field ID: 16643cc5-4993-434f-82ae-85a8695025f6</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(ReadingDetail.BodyFieldName)]
+		public virtual string Body  {get; set;}
+
+		public static readonly ID BodyFieldId = new ID("16643cc5-4993-434f-82ae-85a8695025f6");
+		public const string BodyFieldName = "Body";
+			
+		/// <summary>
+		/// The Category field.
+		/// <para></para>
+		/// <para>Field Type: Droplink</para>		
+		/// <para>Field ID: f61f6e86-2ef0-4966-b954-aaec78161b00</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(ReadingDetail.CategoryFieldName)]
+		public virtual Guid Category  {get; set;}
+
+		public static readonly ID CategoryFieldId = new ID("f61f6e86-2ef0-4966-b954-aaec78161b00");
+		public const string CategoryFieldName = "Category";
+			
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+namespace sugdemo.models
+{
+
+
+ 	/// <summary>
+	/// ICategoryFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/SUGDemo/Folders/CategoryFolder</para>	
+	/// <para>ID: 7cd793d6-3047-4d47-b5be-c7af3493e1b4</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=CategoryFolder.TemplateIdString, AutoMap=true)]
+	public partial interface ICategoryFolder : IGlassBase 
+	{
+	}
+
+	
+	/// <summary>
+	/// CategoryFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/SUGDemo/Folders/CategoryFolder</para>	
+	/// <para>ID: 7cd793d6-3047-4d47-b5be-c7af3493e1b4</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=CategoryFolder.TemplateIdString, AutoMap=true)]
+	public partial class CategoryFolder  : GlassBase, ICategoryFolder 
+	{
+	    
+		public const string TemplateIdString = "7cd793d6-3047-4d47-b5be-c7af3493e1b4";
+		public static readonly ID TemplateId = new ID(TemplateIdString);
+		public const string TemplateName = "CategoryFolder";
 
 	
 	}
@@ -344,6 +560,74 @@ namespace sugdemo.models
 
 
  	/// <summary>
+	/// ICategory Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/SUGDemo/Interfaces/Category</para>	
+	/// <para>ID: 9199e2f0-c861-48cb-b8b8-992668354d47</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=Category.TemplateIdString, AutoMap=true)]
+	public partial interface ICategory : IGlassBase 
+	{
+		/// <summary>
+		/// The CategoryName field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 5b10e94f-7fe0-4c30-9fe1-d5f45954cda0</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[SitecoreField(Category.CategoryNameFieldName)]
+		string CategoryName  {get; set;}
+			
+	}
+
+	
+	/// <summary>
+	/// Category
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/SUGDemo/Interfaces/Category</para>	
+	/// <para>ID: 9199e2f0-c861-48cb-b8b8-992668354d47</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=Category.TemplateIdString, AutoMap=true)]
+	public partial class Category  : GlassBase, ICategory 
+	{
+	    
+		public const string TemplateIdString = "9199e2f0-c861-48cb-b8b8-992668354d47";
+		public static readonly ID TemplateId = new ID(TemplateIdString);
+		public const string TemplateName = "Category";
+
+		/// <summary>
+		/// The CategoryName field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 5b10e94f-7fe0-4c30-9fe1-d5f45954cda0</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(Category.CategoryNameFieldName)]
+		public virtual string CategoryName  {get; set;}
+
+		public static readonly ID CategoryNameFieldId = new ID("5b10e94f-7fe0-4c30-9fe1-d5f45954cda0");
+		public const string CategoryNameFieldName = "CategoryName";
+			
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+namespace sugdemo.models
+{
+
+
+ 	/// <summary>
 	/// IReadingList Interface
 	/// <para></para>
 	/// <para>Path: /sitecore/templates/SUGDemo/PageTypes/ReadingList</para>	
@@ -382,6 +666,20 @@ namespace sugdemo.models
 
 		public static readonly ID PageTitleFieldId = new ID("90018ea2-156a-4919-a5b7-326f5abe7a57");
 		public const string PageTitleFieldName = "PageTitle";
+			
+		/// <summary>
+		/// The SubTitle field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 25257609-2fd0-4d24-97b6-2a7f032fcdbe</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(ReadingList.SubTitleFieldName)]
+		public virtual string SubTitle  {get; set;}
+
+		public static readonly ID SubTitleFieldId = new ID("25257609-2fd0-4d24-97b6-2a7f032fcdbe");
+		public const string SubTitleFieldName = "SubTitle";
 			
 		/// <summary>
 		/// The NavigationTitle field.
@@ -540,6 +838,16 @@ namespace sugdemo.models
 		[SitecoreField(Page.PageTitleFieldName)]
 		string PageTitle  {get; set;}
 			
+		/// <summary>
+		/// The SubTitle field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 25257609-2fd0-4d24-97b6-2a7f032fcdbe</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[SitecoreField(Page.SubTitleFieldName)]
+		string SubTitle  {get; set;}
+			
 	}
 
 	
@@ -570,6 +878,20 @@ namespace sugdemo.models
 
 		public static readonly ID PageTitleFieldId = new ID("90018ea2-156a-4919-a5b7-326f5abe7a57");
 		public const string PageTitleFieldName = "PageTitle";
+			
+		/// <summary>
+		/// The SubTitle field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 25257609-2fd0-4d24-97b6-2a7f032fcdbe</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(Page.SubTitleFieldName)]
+		public virtual string SubTitle  {get; set;}
+
+		public static readonly ID SubTitleFieldId = new ID("25257609-2fd0-4d24-97b6-2a7f032fcdbe");
+		public const string SubTitleFieldName = "SubTitle";
 			
 	
 	}

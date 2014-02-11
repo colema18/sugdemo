@@ -19,8 +19,46 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 8432919c-27c4-4598-8d56-fc265bf08fb4
+revision: 0436add1-3cc9-4bf0-a90a-a52505f30195
 
+----field----
+field: {90018EA2-156A-4919-A5B7-326F5ABE7A57}
+name: PageTitle
+key: pagetitle
+content-length: 57
+
+CSS Blend Modes could be the next big thing in Web Design
+----field----
+field: {FF178202-C22F-470D-B32D-737B02745C0F}
+name: Author
+key: author
+content-length: 13
+
+Bennett Feely
+----field----
+field: {25257609-2FD0-4D24-97B6-2A7F032FCDBE}
+name: SubTitle
+key: subtitle
+content-length: 36
+
+Coming to a browser near you in 2014
+----field----
+field: {F61F6E86-2EF0-4966-B954-AAEC78161B00}
+name: Category
+key: category
+content-length: 38
+
+{409E9FEE-4735-4C7E-8127-527D406EFEDC}
+----field----
+field: {16643CC5-4993-434F-82AE-85A8695025F6}
+name: Body
+key: body
+content-length: 4197
+
+<p name="4de1" class="grid-breaking-slide" style="margin-right: 0px; margin-bottom: 30px; margin-left: 0px; cursor: pointer; color: #333332; font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif; font-size: 22px; letter-spacing: 0.1599999964237213px; line-height: 33px; background-color: #ffffff;">For everyone who has ever opened Photoshop or Illustrator you are most likely familiar with blend modes.&nbsp;<em>Multiply, screen</em>, o<em>verlay</em>&nbsp;and&nbsp;<em>soft light</em>, to name a few can turn boring opaque layers into beautiful pieces of stained glass. However, what awesome &ldquo;blend modes&rdquo; do web designers have at their disposal for making websites beautiful?&nbsp;<em>Opacity.</em>&nbsp;Yep, that&rsquo;s it.</p>
+<figure name="c691" class="image-outset-center notes-source-hasnotes grid-breaking-slide" style="margin: 0px 0px 30px -200px; -webkit-transition: margin 0.1s; transition: margin 0.1s; position: relative; clear: both; outline: 0px; color: #333332; font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif; font-size: 22px; letter-spacing: 0.1599999964237213px; line-height: 33px; background-color: #ffffff;"><img alt="" data-width="1600" data-height="600" width="900" height="338" data-action="zoom" data-action-value="1*raxnqXgTdFGou_Z3CMGVbw.png" src="https://d262ilb51hltx0.cloudfront.net/max/1600/1*raxnqXgTdFGou_Z3CMGVbw.png" style="cursor: -webkit-zoom-in; display: block; margin: 0px; max-width: 100%; box-sizing: border-box;" /><figcaption class="image-caption" style="letter-spacing: 0.01rem; font-style: italic; font-size: 14px; line-height: 1.4; color: #666665; outline: 0px; z-index: 300; position: relative; width: 900px; text-align: center; left: 0px; margin: 10px auto 0px; top: 0px;">Cool-looking things that are difficult or downright impossible to replicate in CSS right now. Top row:&nbsp;<a target="_blank" href="http://dribbble.com/shots/986999-Roman-Candle?list=buckets" rel="nofollow">Doublenaut</a>,&nbsp;<a target="_blank" href="http://dribbble.com/shots/480665-Over?list=buckets" rel="nofollow">Graham Hicks</a>,&nbsp;<a target="_blank" href="http://dribbble.com/shots/935911-Accordion-preview-for-NBC-Sports-Network-4?list=buckets" rel="nofollow">Jonathan Quintin</a>, and&nbsp;<a target="_blank" href="http://dribbble.com/shots/57315-204beech-blog-post?list=buckets" rel="nofollow">Geoff Teehan</a>. Bottom row:&nbsp;<a target="_blank" href="http://dribbble.com/shots/643203-Machining-Website?list=buckets" rel="nofollow">Ben Johnson</a>,&nbsp;<a target="_blank" href="http://dribbble.com/shots/996769-Country-Archer-Business-Card?list=buckets" rel="nofollow">Claire Morales</a>,&nbsp;<a target="_blank" href="http://dribbble.com/shots/270456-Pittsburgh-PA-Gowalla-City-Guide-Postcard?list=searches&amp;tag=alan_defibaugh" rel="nofollow">Alan Defibaugh</a>, and&nbsp;<a target="_blank" href="http://dribbble.com/shots/96209-Rock-Candy?list=buckets" rel="nofollow">Jess Barlow</a>.</figcaption></figure>
+<h3 name="cd0d" class="grid-breaking-slide" style="margin: 0px 0px 2px; font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif; letter-spacing: -0.02em; font-size: 24px; line-height: 1.2; color: #333332; background-color: #ffffff;">Blend modes and the web</h3>
+<p name="c44b" class="grid-breaking-slide notes-source-active" style="margin: 0px 0px 30px; cursor: pointer; color: #333332; font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif; font-size: 22px; letter-spacing: 0.1599999964237213px; line-height: 33px; background-color: #ffffff;">It&rsquo;s a shame that we couldn&rsquo;t have had more blend modes to work with when the&nbsp;<em>opacity</em>&nbsp;property gained widespread support across browsers, but it turns out that ensuring Photoshop-like blend modes render uniformly across different browsers and implementations is&nbsp;<a target="_blank" href="http://dbaron.org/log/20130306-compositing-blending" rel="nofollow">no easy task</a>. Some blend modes have been available in SVG through filters, but these are limited and don&rsquo;t see much use in the real world.</p>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -34,14 +72,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8432919c-27c4-4598-8d56-fc265bf08fb4
+0436add1-3cc9-4bf0-a90a-a52505f30195
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140205T103152:635271931127133398
+20140210T215623:635276661832627343
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

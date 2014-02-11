@@ -9,8 +9,8 @@
 <header class="hero hero-home layout-single-column">
     <div class="align-middle layout-single-column layout-foreground layout-fill-height">
         <div class="align-block">
-            <h1 class="hero-title">Medium - Rare</h1>
-            <p class="hero-description hero-description-tagline">Everyone’s stories and ideas</p>
+            <h1 class="hero-title"><%= Sitecore.Context.Item.Fields["PageTitle"] %></h1>
+            <p class="hero-description hero-description-tagline"><%= Sitecore.Context.Item.Fields["SubTitle"] %></p>
             <div class="hero-actions btn-set"><a class="btn btn-light btn-small" href="https://medium.com/about/9e53ca408c48" title="Learn more about Medium">Learn more</a></div>
         </div>
     </div>

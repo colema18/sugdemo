@@ -19,11 +19,9 @@
             <div class="screen-content post-supplemental-loaded" data-action-scope="_actionscope_2">
                 <canvas class="canvas-renderer" width="1472" height="488"></canvas>
                 <article class="post-article  lang-tier-1 supports-full-image-sections scrolling-region grid-breaking" data-allow-notes="true" tabindex="-1">
-
                     
                     <sc:Placeholder runat="server" ID="header" Key="header" />
                     <sc:Placeholder runat="server" ID="content" Key="content" />
-
 
                 </article>
                 <div class="post-to-post hide" data-action="next-post" data-action-scope="_actionscope_4"><span class="icons icons-read-next post-to-post-icon"></span>

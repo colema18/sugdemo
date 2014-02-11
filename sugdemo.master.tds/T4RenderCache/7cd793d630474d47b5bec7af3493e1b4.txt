@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+
+
+namespace sugdemo.models
+{
+
+
+ 	/// <summary>
+	/// ICategoryFolder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/SUGDemo/Folders/CategoryFolder</para>	
+	/// <para>ID: 7cd793d6-3047-4d47-b5be-c7af3493e1b4</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=CategoryFolder.TemplateIdString, AutoMap=true)]
+	public partial interface ICategoryFolder : IGlassBase 
+	{
+	}
+
+	
+	/// <summary>
+	/// CategoryFolder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/SUGDemo/Folders/CategoryFolder</para>	
+	/// <para>ID: 7cd793d6-3047-4d47-b5be-c7af3493e1b4</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=CategoryFolder.TemplateIdString, AutoMap=true)]
+	public partial class CategoryFolder  : GlassBase, ICategoryFolder 
+	{
+	    
+		public const string TemplateIdString = "7cd793d6-3047-4d47-b5be-c7af3493e1b4";
+		public static readonly ID TemplateId = new ID(TemplateIdString);
+		public const string TemplateName = "CategoryFolder";
+
+	
+	}
+}
+

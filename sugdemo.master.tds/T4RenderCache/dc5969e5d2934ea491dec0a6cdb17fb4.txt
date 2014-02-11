@@ -31,6 +31,16 @@ namespace sugdemo.models
 		[SitecoreField(Page.PageTitleFieldName)]
 		string PageTitle  {get; set;}
 			
+		/// <summary>
+		/// The SubTitle field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 25257609-2fd0-4d24-97b6-2a7f032fcdbe</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[SitecoreField(Page.SubTitleFieldName)]
+		string SubTitle  {get; set;}
+			
 	}
 
 	
@@ -61,6 +71,20 @@ namespace sugdemo.models
 
 		public static readonly ID PageTitleFieldId = new ID("90018ea2-156a-4919-a5b7-326f5abe7a57");
 		public const string PageTitleFieldName = "PageTitle";
+			
+		/// <summary>
+		/// The SubTitle field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 25257609-2fd0-4d24-97b6-2a7f032fcdbe</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField(Page.SubTitleFieldName)]
+		public virtual string SubTitle  {get; set;}
+
+		public static readonly ID SubTitleFieldId = new ID("25257609-2fd0-4d24-97b6-2a7f032fcdbe");
+		public const string SubTitleFieldName = "SubTitle";
 			
 	
 	}
