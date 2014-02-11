@@ -84,6 +84,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageTypes\Reading.cs" />
     <Compile Include="PageTypes\ReadingList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TDSModels.cs" />

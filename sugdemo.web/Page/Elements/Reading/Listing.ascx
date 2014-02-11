@@ -14,7 +14,7 @@
                         <p><%= reading.SubTitle %></p>
                     </a>
                     <ul class="post-item-meta">
-                        <li class="post-item-meta-item"><a href="/@HerbertLui" data-id="aa4429eaad72" title="Go to the profile of Herbert Lui" class="post-item-author link link-secondary"><%= reading.Author %></a> in <a href="/philosophy-logic" title="Go to Writing, Thinking, and Opinions" data-collection-slug="philosophy-logic" data-id="842b36854f80" class="post-item-collection link link-secondary"><%= reading.Category %></a></li>
+                        <li class="post-item-meta-item"><a href="/@HerbertLui" data-id="aa4429eaad72" title="Go to the profile of Herbert Lui" class="post-item-author link link-secondary"><%= reading.Author %></a> in <a href="/philosophy-logic" title="Go to Writing, Thinking, and Opinions" data-collection-slug="philosophy-logic" data-id="842b36854f80" class="post-item-collection link link-secondary"><%= reading.Tag != null ? reading.Tag.CategoryName : "" %></a></li>
                         <li class="post-item-meta-item"><span class="reading-time">4 min read</span></li>
                     </ul>
                 </div>
