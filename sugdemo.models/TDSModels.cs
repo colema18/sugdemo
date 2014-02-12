@@ -113,6 +113,10 @@ namespace sugdemo.models
 			public static readonly ID CategoryFieldId = new ID("f61f6e86-2ef0-4966-b954-aaec78161b00");
 			public const string CategoryFieldName = "Category";
 
+		
+			public static readonly ID TimeFieldId = new ID("65992f2f-4864-443a-a631-d71e57c06267");
+			public const string TimeFieldName = "Time";
+
 			
 
 	}
@@ -204,6 +208,17 @@ namespace sugdemo.models
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IReadingConstants.CategoryFieldName)]
 				public virtual Guid Category  {get; set;}
+
+						/// <summary>
+				/// The Time field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 65992f2f-4864-443a-a631-d71e57c06267</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IReadingConstants.TimeFieldName)]
+				public virtual string Time  {get; set;}
 
 			
 	}
@@ -313,6 +328,16 @@ namespace sugdemo.models
 					[SitecoreField(IReadingDetailConstants.CategoryFieldName)]
 					Guid Category  {get; set;}
 
+								/// <summary>
+					/// The Time field.
+					/// <para></para>
+					/// <para>Field Type: Single-Line Text</para>		
+					/// <para>Field ID: 65992f2f-4864-443a-a631-d71e57c06267</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(IReadingDetailConstants.TimeFieldName)]
+					string Time  {get; set;}
+
 				}
 
 
@@ -333,6 +358,10 @@ namespace sugdemo.models
 		
 			public static readonly ID CategoryFieldId = new ID("f61f6e86-2ef0-4966-b954-aaec78161b00");
 			public const string CategoryFieldName = "Category";
+
+		
+			public static readonly ID TimeFieldId = new ID("65992f2f-4864-443a-a631-d71e57c06267");
+			public const string TimeFieldName = "Time";
 
 			
 
@@ -381,6 +410,17 @@ namespace sugdemo.models
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IReadingDetailConstants.CategoryFieldName)]
 				public virtual Guid Category  {get; set;}
+
+						/// <summary>
+				/// The Time field.
+				/// <para></para>
+				/// <para>Field Type: Single-Line Text</para>		
+				/// <para>Field ID: 65992f2f-4864-443a-a631-d71e57c06267</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IReadingDetailConstants.TimeFieldName)]
+				public virtual string Time  {get; set;}
 
 			
 	}

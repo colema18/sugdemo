@@ -13,6 +13,7 @@
                                                 </div>
                                                 <div class="section-inner layout-single-column">
                                                     <%= Sitecore.Context.Item.Fields["Body"] %>
+                                                    <%= Mo %>
                                                 </div>
                                             </section>
                                         </div>
